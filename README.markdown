@@ -1,13 +1,7 @@
-[![This project is considered stable](https://img.shields.io/badge/Status-stable-green.svg)](https://arp242.net/status/stable)
+# Hydra
+![Screenshot 2021-06-15 at 2 55 02 PM](https://user-images.githubusercontent.com/59250093/122028447-aab51400-cde9-11eb-9bb8-24f016601ee5.png)
+**BORING. (not the help poor kids part)**
+<hr>  
 
-Customize Vim's start screen.
-
-This is a much simpler version of [vim-startify](https://github.com/mhinz/vim-startify).
-
-By default it displays a random `fortune(6)`, but this can be configured. Many
-Linux systems don't ship with `fortune(6)` by default any more (shame on them!)
-so you may get errors if you don't have it installed.
-
-Set `g:Startscreen_function` to your prefered function to run on startup.
-
-See `:help startscreen` for the full documentation.
+![Screenshot 2021-06-15 at 2 57 40 PM](https://user-images.githubusercontent.com/59250093/122028850-0aabba80-cdea-11eb-8264-ea7ab330a8ec.png)
+**That's more like it.**
