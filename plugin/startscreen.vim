@@ -23,6 +23,7 @@ fun! startscreen#hydra()
         endfor
 
         call append('0', repeat([''], &lines/2-len(art)/2))
+        call append('$', repeat([''], &lines/2-len(art)/2))
 	:1
 
 endfun
@@ -49,6 +50,11 @@ fun! startscreen#start()
 		\ noswapfile
 		\ norelativenumber
 
+        if exists(":IndentLinesDisable")
+            :IndentLinesDisable
+        endif
+
+
 	call g:Startscreen_function()
 
         " No modifications to this buffer
@@ -59,6 +65,7 @@ fun! startscreen#start()
 	nnoremap <buffer><silent> o :enew <bar> startinsert<CR><CR>
 	nnoremap <buffer><silent> p :enew<CR>p
 	nnoremap <buffer><silent> P :enew<CR>P
+        nnoremap <buffer><silent> <CR> :enew<CR>
 endfun
 
 
