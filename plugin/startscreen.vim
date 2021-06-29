@@ -6,6 +6,7 @@ set cpo&vim
 
 fun! startscreen#hydra()
         let l:art = [
+                    \ '         VIM  -  Vi IMproved       ',
                     \ '       ⠻⣿⣿⣿⣿⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⡟⣀⣀⣤⣾⡿⠃     ',
                     \ '      ⢻⣿⣿⣄   ⠈⠻⣿⣿⣿⣷⣿⣿⣿⣿⣿⡟ ⠫⢿⣿⡆     ',
                     \ ' ⠙⠃   ⣼⣿⡟  ⠈⠻⣿⣿⣦⣌⡇⠻⣿⣿⣷⣿⣿⣿ ⣿⣿⡇ ⠛⠻⢷⣄ ',
