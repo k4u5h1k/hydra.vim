@@ -41,6 +41,7 @@ fun! startscreen#start()
 
 	enew
 	setlocal
+		\ noruler
 		\ bufhidden=wipe
 		\ buftype=nofile
 		\ nobuflisted
