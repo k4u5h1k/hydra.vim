@@ -6,7 +6,7 @@ set cpo&vim
 
 fun! startscreen#hydra()
         let l:art = [
-                    \ '         VIM  -  Vi IMproved       ',
+                    \ "            Kaushik's ViM          ",
                     \ '       ⠻⣿⣿⣿⣿⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⡟⣀⣀⣤⣾⡿⠃     ',
                     \ '      ⢻⣿⣿⣄   ⠈⠻⣿⣿⣿⣷⣿⣿⣿⣿⣿⡟ ⠫⢿⣿⡆     ',
                     \ ' ⠙⠃   ⣼⣿⡟  ⠈⠻⣿⣿⣦⣌⡇⠻⣿⣿⣷⣿⣿⣿ ⣿⣿⡇ ⠛⠻⢷⣄ ',
@@ -20,10 +20,10 @@ fun! startscreen#hydra()
                     \ '   ⣴⣶⣤⡤⠦⣤⣀⣤⠆     ⣈⣭⣿⣶⣿⣦⣼⣆          '
                     \ ]
         for line in l:art
-            call append('0', join(repeat([''], &columns/2-35/2),' ').line)
+            call append('0', join(repeat([''], &columns/2-35/2-1),' ').line)
         endfor
 
-        call append('0', repeat([''], &lines/2-len(art)/2))
+        call append('0', repeat([''], &lines/2-len(art)/2-1))
         call append('$', repeat([''], &lines/2-len(art)/2))
 	:1
 
